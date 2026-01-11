@@ -2,6 +2,17 @@
 
 This is a high-performance, multithreaded Windows DLL designed as a display plugin for **LCD Smartie**. It allows the software to communicate with remote LCD displays over a network (WiFi/Ethernet) via the TCP protocol.
 
+
+### Remarks
+This version of driver requires the LCD Smartie version 5.6 or newer. 
+**LCD Smartie** can be downloaded from: https://github.com/LCD-Smartie/LCDSmartie 
+
+
+ESP8266 based hardware must be flashed with the latest firmware. 
+Firmware can be found on: https://github.com/limbo666/LcdTcp
+
+
+
 ### Credits
 
 This project is a heavily enhanced fork of the original work by **eeyrw** ([GitHub Profile](https://github.com/eeyrw)). This version has been modernized to support expanded hardware features and improved network stability.
@@ -30,6 +41,13 @@ Unlike the original version which used CodeBlocks/MinGW, this version is optimiz
 
 ----------
 
+## Download
+Go to releases page and downlaod the latest prebuild driver
+https://github.com/limbo666/LcdTcpDll/releases
+
+
+----------
+
 ## How to Use
 
 ### 1. Installation
@@ -40,6 +58,14 @@ Copy `LCD_TCP_DLL.dll` from the build output to your `LCD_SMARTIE_ROOT\displays`
 2.  Go to **Setup** > **Display Settings**.    
 3.  Select `LCD_TCP_DLL.dll` from the drop-down menu.    
 4.  Enter the **IP Address** and **Port** (default 2400) shown on your LCD screen (e.g., `192.168.1.50:2400`).    
+<img width="963" height="554" alt="image" src="https://github.com/user-attachments/assets/ca0641c9-7ce4-41a9-a4cf-56836e0354fc" />
+
+
+----------
+
+## Download
+Go to releases page and downlaod the latest prebuild driver
+https://github.com/limbo666/LcdTcpDll/releases
 
 
 ----------
