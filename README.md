@@ -64,7 +64,7 @@ Copy `LCD_TCP_DLL.dll` from the build output to your `LCD_SMARTIE_ROOT\displays`
 ----------
 
 ## Download
-Go to releases page and downlaod the latest prebuild driver
+Go to releases page and download the latest prebuild driver
 https://github.com/limbo666/LcdTcpDll/releases
 
 
