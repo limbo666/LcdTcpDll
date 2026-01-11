@@ -17,7 +17,7 @@ This project is a heavily enhanced fork of the original work by **eeyrw** ([GitH
 
 ----------
 
-## 🛠 Building the Driver
+## Building the Driver
 
 Unlike the original version which used CodeBlocks/MinGW, this version is optimized for **Visual Studio**:
 
@@ -44,9 +44,52 @@ Copy `LCD_TCP_DLL.dll` from the build output to your `LCD_SMARTIE_ROOT\displays`
 
 ----------
 
-## 🔌 Commands for GPO and Fans
+## Commands for GPO and Fans
+#### Examples 
+Button press to go to next screen
 
-To be added here
+    Action01Variable=$MObutton(1)
+    Action01Condition=2
+    Action01ConditionValue=1
+    Action01Action=NextScreen
+    Action01Enabled=True
+
+Button press to go to theme 2
+
+    Action01Variable=$MObutton(2)
+    Action01Condition=2
+    Action01ConditionValue=1
+    Action01Action=GotoTheme(2)
+    Action01Enabled=True
+
+Button press to go to flash backlight
+ 
+    Action01Variable=$MObutton(2)
+    Action01Condition=2
+    Action01ConditionValue=1
+    Action01Action=BacklightFlash(2)
+    Action01Enabled=True
+
+Button to toggle output
+
+     Action01Variable=$MObutton(2) 
+     Action01Condition=2
+     Action01ConditionValue=1 Action01Action=GPOToggle(1)
+     Action01Enabled=True
+
+Set fan to full on screen 5
+
+    Action01Variable=$ActiveScreen
+    Action01Condition=2
+    Action01ConditionValue=5
+    Action01Action=Fan(1,255)
+    Action01Enabled=True
+
+
+
+
+
+
 
 
 ----------
