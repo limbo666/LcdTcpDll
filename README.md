@@ -30,7 +30,7 @@ Unlike the original version which used CodeBlocks/MinGW, this version is optimiz
 
 ----------
 
-## 💻 How to Use
+## How to Use
 
 ### 1. Installation
 Copy `LCD_TCP_DLL.dll` from the build output to your `LCD_SMARTIE_ROOT\displays` folder.
