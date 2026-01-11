@@ -1,21 +1,56 @@
-# The display driver plugin for LCD Smartie
-[![Build Status](https://travis-ci.org/eeyrw/LcdTcpDll.svg?branch=master)](https://travis-ci.org/eeyrw/LcdTcpDll) [![GitHub last commit](https://img.shields.io/github/last-commit/google/skia.svg)]() [![GitHub version](https://badge.fury.io/gh/eeyrw%2FLcdTcpDll.svg)](https://badge.fury.io/gh/eeyrw%2FLcdTcpDll)
+# LCD TCP Display Driver for LCD Smartie (v1.0.0.2b)
 
-This driver plugin is a native DLL under Windows. which support the display through network ( such as Ethernet, WiFi, etc ). It works with ESP8266 based device ( https://github.com/eeyrw/LcdTcp ) by now.
-## Build the plugin
-If you are not about to build plugin, you can just download the release from GitHub [release page](https://github.com/eeyrw/LcdTcpDll/releases).
+This is a high-performance, multithreaded Windows DLL designed as a display plugin for **LCD Smartie**. It allows the software to communicate with remote LCD displays over a network (WiFi/Ethernet) via the TCP protocol.
 
-You can build it with MSVC or mingw32. I create a project file with IDE CodeBlocks. When you use MSVC, you should specify the .def file to generate correct DLL. When you use mingw, you should add -m32 to compiler flag and -static to linker flag. Because I discover that if you do not attach -static, mingw will dynamically link it's libgccXXX.dll, which is not expected.  
-## Use the plugin
+### Credits
 
-It's fairly simple. Copy the dll to `LCD_SMARTIE_ROOT\displays` and set IP address and port of your display.
-![LCD Smartie setting demo](LCD%20Smartie%20setting%20demo.png)
+This project is a heavily enhanced fork of the original work by **eeyrw** ([GitHub Profile](https://github.com/eeyrw)). This version has been modernized to support expanded hardware features and improved network stability.
 
-If you are failed to run LCD Smartie you could edit `LCD_SMARTIE_ROOT\config.ini` and append following lines to category `[Communication Settings]`:
+----------
 
-    DisplayDLLName=LCD_TCP_MINGW_DLL.dll
-    DisplayDLLParameters=192.168.1.134:2400
+##  Key Features in v1.0.0.2b
 
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1NDMwMzk5NF19
--->
+-   **Multithreaded Architecture:** The TCP communication now runs on a separate thread, preventing LCD Smartie from "freezing" or lagging during network congestion.    
+-   **ESP8266 Stability Fix:** Disabled `TCP_NODELAY` to utilize Nagle’s Algorithm, which prevents overwhelming the ESP8266 CPU and reduces watchdog timer (WDT) resets.    
+-   **GPO & Fan Control:** Full support for standard Matrix Orbital commands to trigger physical pins on the remote device.    
+-   **Modern Build System:** Native support for **Visual Studio 2026** (x64 configuration).    
+
+----------
+
+## 🛠 Building the Driver
+
+Unlike the original version which used CodeBlocks/MinGW, this version is optimized for **Visual Studio**:
+
+1.  Open the `.sln` solution file in Visual Studio 2022.    
+2.  Select your platform (**x64** is recommended for modern systems).    
+3.  Set the configuration to **Release**.    
+4.  Click **Build Solution**.    
+5.  The final DLL will be located in the `x64\Release` or `Release` folder.
+    
+
+----------
+
+## 💻 How to Use
+
+### 1. Installation
+Copy `LCD_TCP_DLL.dll` from the build output to your `LCD_SMARTIE_ROOT\displays` folder.
+
+### 2. Configuration
+1.  Open **LCD Smartie**.    
+2.  Go to **Setup** > **Display Settings**.    
+3.  Select `LCD_TCP_DLL.dll` from the drop-down menu.    
+4.  Enter the **IP Address** and **Port** (default 2400) shown on your LCD screen (e.g., `192.168.1.50:2400`).    
+
+
+----------
+
+## 🔌 Commands for GPO and Fans
+
+To be added here
+
+
+----------
+
+### License
+
+This project is licensed under the **MIT License**, consistent with the original author's update.
