@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="LCD_TCP_DLL/LCD_TCP_DLL.vcxproj" Id="9eea13d9-e473-46aa-a168-ec99261f8c59" />
+</Solution>

@@ -1,0 +1,9 @@
+﻿  debug_output.c
+  LCDS_Driver.c
+  tcp.c
+     Creating library G:\Nextcloud\Development\Arduino New\4x40_Wifi_LCD for LCD Smartie (Working)\TCP IP LCD Screen -Gemini- firmware & driver\LCD_TCP_DLL - 1.0.0.2\x64\Release\LCD_TCP_DLL.lib and object G:\Nextcloud\Development\Arduino New\4x40_Wifi_LCD for LCD Smartie (Working)\TCP IP LCD Screen -Gemini- firmware & driver\LCD_TCP_DLL - 1.0.0.2\x64\Release\LCD_TCP_DLL.exp
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 40 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  LCD_TCP_DLL.vcxproj -> G:\Nextcloud\Development\Arduino New\4x40_Wifi_LCD for LCD Smartie (Working)\TCP IP LCD Screen -Gemini- firmware & driver\LCD_TCP_DLL - 1.0.0.2\x64\Release\LCD_TCP_DLL.dll
