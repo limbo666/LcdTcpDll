@@ -55,7 +55,7 @@ Copy `LCD_TCP_DLL.dll` from the build output to your `LCD_SMARTIE_ROOT\displays`
 
 ### 2. Configuration
 1.  Open **LCD Smartie**.    
-2.  Go to **Setup** > **Display Settings**.    
+2.  Go to **Setup** > **LCD Settings**.    
 3.  Select `LCD_TCP_DLL.dll` from the drop-down menu.    
 4.  Enter the **IP Address** and **Port** (default 2400) shown on your LCD screen (e.g., `192.168.1.50:2400`).    
 <img width="963" height="554" alt="image" src="https://github.com/user-attachments/assets/ca0641c9-7ce4-41a9-a4cf-56836e0354fc" />
