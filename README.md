@@ -61,12 +61,6 @@ Copy `LCD_TCP_DLL.dll` from the build output to your `LCD_SMARTIE_ROOT\displays`
 <img width="963" height="554" alt="image" src="https://github.com/user-attachments/assets/ca0641c9-7ce4-41a9-a4cf-56836e0354fc" />
 
 
-----------
-
-## Download
-Go to releases page and download the latest prebuild driver
-https://github.com/limbo666/LcdTcpDll/releases
-
 
 ----------
 
